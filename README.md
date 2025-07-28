@@ -32,7 +32,7 @@ Searched for any file that had the string "tor" in it and discovered what looks 
 
 ```kql
 DeviceFileEvents  
-| where DeviceName == "threat-hunt-lab"  
+| where DeviceName == "cyril-threat-la"  
 | where InitiatingProcessAccountName == "cytowerlab"  
 | where FileName contains "tor"  
 | where Timestamp >= datetime(2025-07-27T19:25:41.8240003Z)  
